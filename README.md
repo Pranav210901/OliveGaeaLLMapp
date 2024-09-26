@@ -111,6 +111,7 @@ pip install -r requirements.txt
 - **Memory**:
   Depending on the hardware and user preferences for using int-8 quantization, the model may require significant memory resources. The code uses `low_cpu_mem_usage=True` to minimize resource consumption.
 
+---
     
 ## COGVLM FLASK APPLICATION
 
