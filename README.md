@@ -131,7 +131,8 @@ To start the Flask server, run the following command:
 
     python3 app.py
 
-The server will start at http://localhost:8000 by default.
+The server will not start at http://localhost:8000 by default. 
+Ensure use at http://34.45.152.152/
 
 ---------------------------------------------------------------------
 API ENDPOINTS:
@@ -143,14 +144,14 @@ API ENDPOINTS:
            the 'uploads/' directory.
 
     Example:
-    curl -X POST -F file=@path_to_image http://localhost:8000/api
+    curl -X POST -F file=@path_to_image http://34.45.152.152/api
 
 2. GET /api:
     Description: Runs the cogvlm.py script and returns the model's response based on the user 
                  query and the uploaded image.
 
     Example:
-    curl http://localhost:8000/api
+    curl http://34.45.152.152/api
 
 ---------------------------------------------------------------------
 PROJECT STRUCTURE:
