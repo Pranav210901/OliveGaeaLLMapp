@@ -157,7 +157,6 @@ API ENDPOINTS:
 ---------------------------------------------------------------------
 PROJECT STRUCTURE:
 
-.
 ├── app.py          # Main Flask application
 
 ├── cogvlm.py       # Model script for handling queries
