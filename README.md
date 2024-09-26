@@ -111,6 +111,7 @@ pip install -r requirements.txt
 - **Memory**:
   Depending on the hardware and user preferences for using int-8 quantization, the model may require significant memory resources. The code uses `low_cpu_mem_usage=True` to minimize resource consumption.
 
+---
     
 ## COGVLM FLASK APPLICATION
 
@@ -131,7 +132,8 @@ To start the Flask server, run the following command:
 
     python3 app.py
 
-The server will start at http://localhost:8000 by default.
+The server will not start at http://localhost:8000 by default. 
+Ensure use at http://34.45.152.152/
 
 ---------------------------------------------------------------------
 API ENDPOINTS:
@@ -143,23 +145,26 @@ API ENDPOINTS:
            the 'uploads/' directory.
 
     Example:
-    curl -X POST -F file=@path_to_image http://localhost:8000/api
+    curl -X POST -F file=@path_to_image http://34.45.152.152/api
 
 2. GET /api:
     Description: Runs the cogvlm.py script and returns the model's response based on the user 
                  query and the uploaded image.
 
     Example:
-    curl http://localhost:8000/api
+    curl http://34.45.152.152/api
 
 ---------------------------------------------------------------------
 PROJECT STRUCTURE:
 
-.
 ├── app.py                # Main Flask application
+
 ├── cogvlm.py             # Model script for handling queries
+
 ├── uploads/              # Directory for storing uploaded images
+
 ├── requirements.txt      # Required dependencies
+
 └── README.txt            # This documentation
 
 ---------------------------------------------------------------------
