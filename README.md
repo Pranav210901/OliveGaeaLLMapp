@@ -157,15 +157,15 @@ API ENDPOINTS:
 ---------------------------------------------------------------------
 PROJECT STRUCTURE:
 
-├── app.py          # Main Flask application
+├── app.py                # Main Flask application
 
-├── cogvlm.py       # Model script for handling queries
+├── cogvlm.py             # Model script for handling queries
 
-├── uploads/        # Directory for storing uploaded images
+├── uploads/              # Directory for storing uploaded images
 
-├── requirements.txt   # Required dependencies
+├── requirements.txt      # Required dependencies
 
-└── README.txt      # This documentation
+└── README.txt            # This documentation
 
 ---------------------------------------------------------------------
 NOTES:
